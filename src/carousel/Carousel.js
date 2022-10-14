@@ -1136,6 +1136,10 @@ export default class Carousel extends Component {
         this._snapToItem(positionIndex, animated, fireCallback);
     }
 
+    snapToFist (index, animated = true, fireCallback = true) {
+        this._snapToItem(0, animated, fireCallback);
+    }
+
     snapToNext (animated = true, fireCallback = true) {
         const itemsLength = this._getCustomDataLength();
 
